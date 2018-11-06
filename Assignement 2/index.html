@@ -18,8 +18,7 @@
       <div class="container">
         <img src="taxi.jpeg" alt="Minibus Taxi">
       </div>
-    </section>
-    <section class="section">
+      <div class="container" style="margin-top: 2em">
     <form id="login-form" class="form is-half">
       <div class="field">
              <label class="label">Username</label>
@@ -35,12 +34,12 @@
                      type="text"
                      placeholder="Enter your password"/>
       </div>
-      <div class="field">     
-        <input id="client-secret"
-               class="input" 
+      <div class="checkbox">     
+        <input               
+              class="checkbox" 
                type="checkbox"
                />Remember me?          
-      </div><br>
+      </div>
       <div class="field">
                 <input id="submit"
                 type="submit" 
@@ -48,14 +47,15 @@
                   class="button is-primary"/>                 
                  
       </div>
-      <p>Don't have an account?</p>
-      <div class="field">
-        <input id="submit"
-        type="submit" 
-         value="Signup"
-          class="button is-primary"/>                 
-         
-      </div>
+      <div class="field is-grouped is-grouped-centered" style="margin-top: 2em">
+        <div class="has-text-centered">
+          Don't have an account?
+          <br />
+          <span class="is-link"><u class="is-black">Sign up</u></span>
+        </div>
+        </div>
+        </form>
+</div>
     </section>
   </body>
 </html>
