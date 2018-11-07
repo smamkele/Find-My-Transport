@@ -3,19 +3,19 @@
   "name": "public transport",
   "icons": [
   {
-    "src": "/images/big.png",
-    "type": "image/png",
+    "src": "/images/images192.jpeg",
+    "type": "image/jpeg",
     "sizes": "192x192"
   },
   {
-    "src": "/images/small.png",
-    "type": "image/png",
+    "src": "/images/images512.jpeg",
+    "type": "image/jpeg",
     "sizes": "512x512"
   }
 ],
 
   
-  "start_url": "/findmytransport/?source=Find-My-Transport",
+  "start_url": "/ https://assignement3-asiutsdvbj.now.sh",
   "background_color": "#3367D6",
   "display": "standalone",
   "scope": "/transport/",
