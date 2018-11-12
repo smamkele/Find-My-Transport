@@ -1,54 +1,51 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta property="og:image" content="images/images512.png">
-  <link rel="stylesheet" href="bulma.min.css">
-  <link rel="manifest" href="manifest.json">
-  <script src='https://api.mapbox.com/mapbox-gl-js/v0.49.0/mapbox-gl.js'></script>
-  <link href='https://api.mapbox.com/mapbox-gl-js/v0.49.0/mapbox-gl.css' rel='stylesheet' />
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.min.css" >
+    <link rel="manifest" href="/manifest.json">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <script src='https://api.mapbox.com/mapbox-gl-js/v0.49.0/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v0.49.0/mapbox-gl.css' rel='stylesheet' />
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  </head>
   
-</head>
-<body>
-  <section class="section">
-    <div class="container has-text-centered">
-      <h1 class="title">
-        My Transport
-        <hr>
-      </h1>
-    </div>
-    <div class="container has-text-centered">
-      <img src="images/taxi.jpeg" alt="Minibus Taxi">
-    </div>
-    <div class="container" style="margin-top: 2em">
-      <form id="login-form" class="form is-half">
+  <body>
+    <title>My Transport</title>
+    <section class="section" id="app">
+      <div class="container has-text-centered">
+        <h1 class="title">
+         My Transport
+        </h1>
+      </div>
+      <div class="container has-text-centered">
+        <div class="">
+          <img src="images/taxi.jpeg" alt="minibus Taxi">
+        </div>
+      </div>
+      <div class="container has-text-centered">        
+        <label class="label">Username</label>
         <div class="field">
-          <label class="label">Username</label>
-          <input id="client-id" class="input" type="text" placeholder="Enter your username" />
+            <input id="username" placeholder="Username">
         </div>
         <div class="field">
-          <label class="label">Password</label>
-          <input id="client-secret" class="input" type="text" placeholder="Enter your password" />
+            <input id="password" placeholder="Password">
+        </div>       
+        <div class="field" id="button">
+          <input v-on:click="mapPage" type="submit" class="button is-primary" value="Login">
         </div>
-        <div class="checkbox">
-          <input class="checkbox" type="checkbox" />Remember me?
-        </div>
-        <div class="field">
-          <input id="login" onclick="loadMap();" type="submit" value="Login" class="button is-primary" />
+        &nbsp;
+        <p>Need an account?</p>
+     
+        <a href="">Signup</a>        
+      </div>
 
-        </div>
-        <div class="field is-grouped is-grouped-centered" style="margin-top: 2em">
-          <div class="has-text-centered">
-            Don't have an account?
-            <br />
-            <span class="is-link"><u class="is-black">Sign up</u></span>
-          </div>
-        </div>
-      </form>
-    </div>
-  </section>
-  <script src="scripts/script.js"></script>
-</body>
+      
+   
+    </section>
+    
+  </body>  
+  <script src="main.js"></script>
 </html>

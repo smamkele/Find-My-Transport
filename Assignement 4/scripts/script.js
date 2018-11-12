@@ -1,6 +1,9 @@
+window.onload = function(){
+    loadMap();
+}
 function loadMap() {
     mapboxgl.accessToken = 'pk.eyJ1IjoidXdjbGVjdHVyZXIiLCJhIjoiY2ptdWJ6aWt1MGQ4aDN3bzhiM2V1dnRiYyJ9.lWYq773rwVmRzbyHcYAVHw'
-    var map = new mapboxgl.Map({
+    window.map = new mapboxgl.Map({
         container: 'map',
         style: 'mapbox://styles/mapbox/streets-v10',
         center: [18.4241, -33.9249], // starting position [lng, lat]
@@ -9,7 +12,7 @@ function loadMap() {
     })
  
 
-    /*window.startPin = new mapboxgl.Marker({ draggable: true }).setLngLat([0, 0]).addTo(window.map)
+    window.startPin = new mapboxgl.Marker({ draggable: true }).setLngLat([0, 0]).addTo(window.map)
     window.destinationPin = new mapboxgl.Marker({ draggable: true }).setLngLat([0, 0]).addTo(window.map)
 
     window.map.on('click', function (event) {
@@ -23,17 +26,8 @@ function loadMap() {
             window.startPoint = true
             document.getElementById('start').value = event.lngLat.lng + ',' + event.lngLat.lat
         }
-    }) */
+    }) 
 
 }
-var app = new Vue({
-    el: "#app",
-    data: {          
-    },
-    methods:{
-     loadMap: function(){
-        window.location.href='map.html'
-        }
-    }
-})
+
 

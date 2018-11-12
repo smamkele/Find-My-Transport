@@ -1,4 +1,16 @@
-// Register the service worker if available.
+var app = new Vue({
+    el: '#app',
+    data: {          
+    },
+    methods:{
+     mapPage: function(){
+        window.location.href='map.html'
+        }
+    }
+})
+
+
+/*// Register the service worker if available.
 if ('serviceWorker' in navigator) {
     navigator.serviceWorker.register('./sw.js').then(function(reg) {
         console.log('Successfully registered service worker', reg);
@@ -30,3 +42,5 @@ if (navigator.onLine) {
 
 // Set Knockout view model bindings.
 ko.applyBindings(Page.vm);
+
+*/
