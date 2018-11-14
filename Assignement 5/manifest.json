@@ -1,0 +1,28 @@
+{
+  "short_name": "Transport",
+  "name": "public transport",
+  "icons": [
+  {
+    "src": "/images/images192.jpeg",
+    "type": "image/jpeg",
+    "sizes": "192x192"
+  },
+  {
+    "src": "/images/images512.jpeg",
+    "type": "image/jpeg",
+    "sizes": "512x512"
+  }
+],
+
+  
+  "start_url": "/Find-My-Transport/assignement3/index.html",
+  "background_color": "#3367D6",
+  "display": "standalone", 
+  "theme_color": "#3367D6"
+  
+  
+}
+
+  
+
+
