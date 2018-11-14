@@ -58,8 +58,11 @@ window.addEventListener('load', function() {
   
   });
 
+<<<<<<< HEAD
   
 
+=======
+>>>>>>> ab5457133a381f28f4073fd2028453e352e8e9c4
 
 // Register the service worker if available.
 if ('serviceWorker' in navigator) {
