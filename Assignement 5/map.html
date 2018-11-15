@@ -4,7 +4,6 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.min.css" >
-<<<<<<< HEAD
   <link rel="stylesheet" type="text/css" href="https://js.api.here.com/v3/3.0/mapsjs-ui.css?dp-version=1533195059" />
 <script type="text/javascript" src="https://js.api.here.com/v3/3.0/mapsjs-core.js"></script>
 <script type="text/javascript" src="https://js.api.here.com/v3/3.0/mapsjs-service.js"></script>
@@ -27,9 +26,10 @@
     <div id="results_window" class="container">
         <ul>
             <li v-for="result in results" v-on:click="klick(result)">
-                {{ result.label }}
+                {{result.label}}
             </li>
         </ul> 
+       
     </div>
     <div id="geo_results" class="container">
         <div v-for="result in geoResults">
@@ -38,46 +38,10 @@
     </div>    
 </div>
 <div class="container" id="map-form">
-        <div id="map" style="width: 100%; height: 400px; background: grey" />
+        <div id="map" style="width: 100%; height: 400px; background: grey"></div>
         <div id="panel" style="position:absolute; width:49%; left:51%; height:100%; background:inherit" ></div>
-
 </div>
     <script src="scripts/script.js"></script>
-    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
-
-  
-=======
-  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
-  integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
-  crossorigin=""/>
-  <script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js"
-   integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA=="
-   crossorigin=""></script>
-  <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
-</head>
-<body>
-    <div class="container" id="journey-form">
-        <form class="form">
-            <div class="field">
-                <label class="label">Your location</label>
-                <input class="input" id="start"/>
-            </div>
-
-            <div class="field">
-                <label class="label">Destination</label>
-                <input class= "input" id="destination"/>
-            </div>
-       
-            <div class="field">
-                <input class="button is-primary" id="submit-journey" value="search"/>
-            </div>
-            &nbsp;
-        </form>
-    </div>
-    <div class="container" id="map-form">
-        <div id='map' style='width: 100%; height: 600px;'></div> 
-    </div>
-    <script src="scripts/script.js"></script>
->>>>>>> ab5457133a381f28f4073fd2028453e352e8e9c4
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>  
     </body>
 </html>
