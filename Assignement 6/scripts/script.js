@@ -113,8 +113,7 @@ login()
                         }
                     })
             },
-            search: function () {
-                console.log('running search')
+            search: function () {       
                 var journeyUrl = 'https://platform.whereismytransport.com/api/journeys'
                 var ourBody = {
                     "geometry": {
@@ -154,14 +153,15 @@ login()
                     if(itineraries.length > 0) {
                         var legs = itineraries[0].legs
                         for(var i = 0; i < legs.length; i++) {
-                            console.log('geometry', legs[i].geometry.coordinates)
+                     // console.log('geometry', legs[i].geometry.coordinates)
                             var coorindates = legs[i].geometry.coordinates
-    
-                    // create a red polyline from an array of LatLng points
-                            var latlngs = coorindates
-                            var polyline = L.polyline(latlngs, {color: 'red'}).addTo(map);
-                        
-                         
+
+                            var latlngs = coorindates                                                
+                     // create a red polyline from an array of LatLng points
+                            var polyline = L.polyline(latlngs, {color: 'red'}).addTo(map)
+                            // zoom the map to the polyline
+                            map.fitBounds(polyline.getBounds());
+
 
                                 
                         }

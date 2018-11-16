@@ -1,0 +1,49 @@
+<html>
+  <head>
+    <title>Connecting to the WhereIsMyTransport API</title>
+    <link 
+        rel="stylesheet" 
+        type="text/css" 
+        media="screen" 
+        href="bulma.min.css" />  
+      </head> 
+      <script>
+    
+    function getToken() {
+                    var token = this.localStorage.getItem('token')
+                    if(token == null || token == undefined || token == 'undefined') {
+                        throw new Error("Invalid token")
+                    } else {
+                        return token
+                    }
+                }
+            
+    </script>
+  <body>
+    <br />
+    <div id="login-form" class="container">
+            <form class="form is-half">
+                      <div class="field">
+                           <label class="label">Client Id</label>
+                            <input id="client-id"
+                                   class="input" 
+                                  type="text"/>
+                        </div>
+                        <div class="field">
+                              <label class="label">Client Secret</label>
+                              <input id="client-secret"
+                                     class="input" 
+                                     type="text"/>
+                        </div>
+                        <div class="field">
+                              <input id="submit"
+                                    type="submit" 
+                                   value="Submit"
+                                   class="button is-primary"                  
+                                />
+                        </div>
+                      
+             </form>
+        </div> 
+  </body>
+</html>
